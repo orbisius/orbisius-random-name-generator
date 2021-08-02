@@ -69,9 +69,11 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 	public function renderForm($attribs = [], $content = '') {
 		static $instance = 0; // in case it's used multiple times on a page
 		$msg = '';
+		$result = '';
 		ob_start();
 
 		$instance++;
+		$btn_label = empty($attribs['btn_label']) ? 'Generate' : $attribs['btn'];
 
 		// Let's get a random word only on post
 		if ($this->isPost()) {
@@ -85,7 +87,7 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 
 			shuffle($words);
 			$word = reset($words);
-			$msg = $word;
+			$result = $word;
 		}
 		?>
 		<div id="orbisius_random_name_generator_container orbisius_random_name_generator_container<?php echo $instance;?>"
@@ -105,11 +107,11 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<button id="submit" class="btn btn-color">
-									<?php _e('Generate', 'orbisius-tutorial-random-name-generator');?></button>
+									<?php _e($btn_label, 'orbisius-tutorial-random-name-generator');?></button>
 							</div>
 						</div>
 
-						<div class="result app_hide"></div>
+						<div class="result orbisius_random_name_generator_result<?php echo $instance;?>"><?php echo $result; ?></div>
 					</form>
 				</div> <!-- /orbisius_random_name_generator_form_wrapper -->
 			</div> <!-- /row -->
