@@ -2,7 +2,7 @@
 /*
 Plugin Name: Orbisius Random Name Generator
 Plugin URI: https://orbisius.com/products/wordpress-plugins/orbisius-random-name-generator
-Description: Displays a random name out of words that you have specified between the shortcode [orbisius_tutorial_random_name_generator]....[/orbisius_tutorial_random_name_generator]
+Description: Displays a random name out of words that you have specified between the shortcode [orbisius_random_name_generator]....[/orbisius_random_name_generator]
 Version: 1.0.0
 Author: Svetoslav Marinov (Slavi)
 Author URI: https://orbisius.com
@@ -35,7 +35,7 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 	 *
 	 */
 	public function init() {
-		add_shortcode( 'orbisius_tutorial_random_name_generator', [ $this, 'renderForm' ], 20, 2 );
+		add_shortcode( 'orbisius_random_name_generator', [ $this, 'renderForm' ], 20, 2 );
 	}
 
 	public function isPost() {
@@ -61,7 +61,7 @@ class Orbisius_Random_Name_Generator_Shortcodes {
     }
 
 	/**
-	 * Processes [orbisius_tutorial_random_name_generator]....[/orbisius_tutorial_random_name_generator]
+	 * Processes [orbisius_random_name_generator]....[/orbisius_random_name_generator]
 	 * @param array $attribs
 	 * @param string $content the text between the tags
 	 * @return string
@@ -88,13 +88,13 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 			$msg = $word;
 		}
 		?>
-		<div id="orbisius_tutorial_random_name_generator_container orbisius_tutorial_random_name_generator_container<?php echo $instance;?>"
-		     class="orbisius_tutorial_random_name_generator_container orbisius_tutorial_random_name_generator_container<?php echo $instance;?>">
+		<div id="orbisius_random_name_generator_container orbisius_random_name_generator_container<?php echo $instance;?>"
+		     class="orbisius_random_name_generator_container orbisius_random_name_generator_container<?php echo $instance;?>">
 			<div class="row">
 				<!-- Contact Form -->
-				<div id="orbisius_tutorial_random_name_generator_form_wrapper" class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-					<form id='orbisius_tutorial_random_name_generator_form<?php echo $instance;?>'
-					      class="orbisius_tutorial_random_name_generator_form orbisius_tutorial_random_name_generator_form<?php echo $instance;?> form-horizontal" method="POST">
+				<div id="orbisius_random_name_generator_form_wrapper" class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+					<form id='orbisius_random_name_generator_form<?php echo $instance;?>'
+					      class="orbisius_random_name_generator_form orbisius_random_name_generator_form<?php echo $instance;?> form-horizontal" method="POST">
                         <input type="hidden" name="instance_id" value="<?php echo $instance;?>">
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -111,9 +111,9 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 
 						<div class="result app_hide"></div>
 					</form>
-				</div> <!-- /orbisius_tutorial_random_name_generator_form_wrapper -->
+				</div> <!-- /orbisius_random_name_generator_form_wrapper -->
 			</div> <!-- /row -->
-		</div> <!-- /orbisius_tutorial_random_name_generator_container -->
+		</div> <!-- /orbisius_random_name_generator_container -->
 
 		<?php
 		$buff = ob_get_clean();
