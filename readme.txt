@@ -15,6 +15,7 @@ Generates a random name based on a keyword list that you define.
 Orbisius Random Name Generator is a simple plugin that randomly picks a name from a list.
 The shortcode can be used multiple times with different keywords on the same page.
 It will pick a random name from the appropriate list.
+The duplicates will be removed automatically (if any).
 
 This plugin is for people who want to have a
 * Random Name Generator
