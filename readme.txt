@@ -13,13 +13,25 @@ Generates a random name based on a keyword list that you define.
 == Description ==
 
 Orbisius Random Name Generator is a simple plugin that randomly picks a name from a list.
-Supported seprators: ,;| and new line
+
+This plugin is for people who want to have a
+* Random Name Generator
+* Random Pet Name Generator
+* Random Baby Name Generator
+* Random Domain Name Generator
+* Random random stuff :)
+
+Supported keyword separators: ,;| and new line
 
 = How it works =
 
-Create a page and insert the shortcode
+Create a page and insert the shortcode and define the keywords.
 
-You can pass words as a parameter
+If you want a customization (paid). Do contact us
+
+<a href="https://orbisius.com/products/wordpress-plugins/orbisius-random-name-generator/?utm_source=orbisius-random-name-generator&utm_medium=readme" title="" target="_blank">contact us</a>
+
+*You can pass words as a parameter*
 [orbisius_tutorial_random_name_generator words="word1, word2, word3"]
 
 You can pass words between the opening and closing tags.
@@ -29,7 +41,7 @@ word2
 word3
 [/orbisius_tutorial_random_name_generator]
 
-You can pass words between the opening and closing tags and separate them by comma
+* You can pass words between the opening and closing tags and separate them by comma *
 [orbisius_tutorial_random_name_generator]
 word1, word2, word3
 [/orbisius_tutorial_random_name_generator]
@@ -37,33 +49,26 @@ word1, word2, word3
 == Demo ==
 
 Test drive
-https://wpdemo.net/try/plugin/static-optimizer
+TODO
 
 Video demo
-https://www.youtube.com/watch?v=1KC_JJOcu1s
+TODO
 
-
-You install the plugin.
-
-
-= Who is this plugin for? =
-People who want to have a Random Name Generator, Random Pet Name Generator, Random Baby Name Generator, Random Domain Name Generator
 
 == Support ==
 
-Bugs? Suggestions? If you want a faster response contact us through our website's contact form at https://statopt.com and 
+Bugs? Suggestions? If you want a faster response contact us through our website's contact form at https://orbisius.com and
 not through the support tab of this plugin or WordPress forums for a faster response.
 
 = Author =
 
-Svetoslav Marinov (Slavi) | <a href="https://statopt.com/?utm_source=static-optimizer-wp" title="Image, js, css optimization and compression" target="_blank">Orbisius Random Name Generator</a>
+Svetoslav Marinov (Slavi) | <a href="https://orbisius.com/products/wordpress-plugins/orbisius-random-name-generator/?utm_source=orbisius-random-name-generator&utm_medium=readme" title="" target="_blank">Orbisius Random Name Generator</a>
 
 == Upgrade Notice ==
 n/a
 
 == Screenshots ==
-1. Showing the attachments listing page
-2. Showing the result
+1. n/a
 
 == Installation ==
 
@@ -78,8 +83,19 @@ n/a
 Please submit any bug report or feature requests in our github issue tracking system.
 <a href="https://github.com/orbisius/orbisius-random-name-generator/issues" target="_blank" title="[new window]">Report Bugs / Features</a>
 
+== Frequently Asked Questions ==
+
+= Who is this plugin for? =
+
+People who want to have a:
+* Random Name Generator
+* Random Pet Name Generator
+* Random Baby Name Generator
+* Random Domain Name Generator
+* random random stuff :)
+
 = Does it work with WordPress multisite? =
-Yes
+It wasn't tested but should work
 
 == Changelog ==
 
