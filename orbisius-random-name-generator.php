@@ -111,7 +111,7 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 							</div>
 						</div>
 
-						<div class="result orbisius_random_name_generator_result<?php echo $instance;?>"><?php echo $result; ?></div>
+						<div class="result orbisius_random_name_generator_result orbisius_random_name_generator_result<?php echo $instance;?>"><?php echo $result; ?></div>
 					</form>
 				</div> <!-- /orbisius_random_name_generator_form_wrapper -->
 			</div> <!-- /row -->
