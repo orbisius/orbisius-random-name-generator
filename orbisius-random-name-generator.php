@@ -52,7 +52,7 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 		$content = str_ireplace([ "<br/>", '<br>', "<p>", "</p>", "<div>", "</div>", ] , "\n", $content);
 		$content = strip_tags($content);
 		$content = trim($content);
-		$words = preg_split('#[\r\n,;\|]+#si', $content);
+		$words = preg_split('#[\t\r\n,;|]+#si', $content);
 		$words = array_map('trim', $words);
 		$words = array_unique($words);
 		$words = array_filter($words);

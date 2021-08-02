@@ -21,7 +21,7 @@ This plugin is for people who want to have a
 * Random Domain Name Generator
 * Random random stuff :)
 
-Supported keyword separators: ,;| and new line
+Supported keyword separators: ,;| tab and new line
 
 = How it works =
 
