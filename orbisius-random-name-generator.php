@@ -67,16 +67,17 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 	 * @return string
 	 */
 	public function renderForm($attribs = [], $content = '') {
-		static $instance = 0; // in case it's used multiple times on a page
+		static $instance_id = 0; // in case it's used multiple times on a page
 		$msg = '';
 		$result = '';
 		ob_start();
 
-		$instance++;
 		$btn_label = empty($attribs['btn_label']) ? 'Generate' : $attribs['btn'];
 
+		$instance_id++;
+
 		// Let's get a random word only on post
-		if ($this->isPost()) {
+		if ($this->isPost() && (!empty($_REQUEST['instance_id']) && $_REQUEST['instance_id'] == $instance_id)) {
 			$words = $this->parseKeywords($content);
 
 			if (!empty($attribs['words'])) {
@@ -89,15 +90,16 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 			$word = reset($words);
 			$result = $word;
 		}
+
 		?>
-		<div id="orbisius_random_name_generator_container orbisius_random_name_generator_container<?php echo $instance;?>"
-		     class="orbisius_random_name_generator_container orbisius_random_name_generator_container<?php echo $instance;?>">
+		<div id="orbisius_random_name_generator_container orbisius_random_name_generator_container<?php echo $instance_id;?>"
+		     class="orbisius_random_name_generator_container orbisius_random_name_generator_container<?php echo $instance_id;?>">
 			<div class="row">
 				<!-- Contact Form -->
 				<div id="orbisius_random_name_generator_form_wrapper" class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-					<form id='orbisius_random_name_generator_form<?php echo $instance;?>'
-					      class="orbisius_random_name_generator_form orbisius_random_name_generator_form<?php echo $instance;?> form-horizontal" method="POST">
-                        <input type="hidden" name="instance_id" value="<?php echo $instance;?>">
+					<form id='orbisius_random_name_generator_form<?php echo $instance_id;?>'
+					      class="orbisius_random_name_generator_form orbisius_random_name_generator_form<?php echo $instance_id;?> form-horizontal" method="POST">
+                        <input type="hidden" name="instance_id" value="<?php echo esc_attr($instance_id);?>">
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<?php echo $msg; ?>
@@ -111,7 +113,7 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 							</div>
 						</div>
 
-						<div class="result orbisius_random_name_generator_result orbisius_random_name_generator_result<?php echo $instance;?>"><?php echo $result; ?></div>
+						<div class="result orbisius_random_name_generator_result orbisius_random_name_generator_result<?php echo $instance_id;?>"><?php echo $result; ?></div>
 					</form>
 				</div> <!-- /orbisius_random_name_generator_form_wrapper -->
 			</div> <!-- /row -->
