@@ -100,7 +100,7 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 				<div id="orbisius_random_name_generator_form_wrapper" class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
 					<form id='orbisius_random_name_generator_form<?php echo $instance_id_esc;?>'
 					      class="orbisius_random_name_generator_form orbisius_random_name_generator_form<?php echo $instance_id_esc;?> form-horizontal" method="POST">
-                        <input type="hidden" name="instance_id" value="<?php echo esc_attr($instance_id_esc);?>">
+                        <input type="hidden" name="instance_id" value="<?php echo $instance_id_esc;?>">
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<?php echo esc_html($msg); ?>
