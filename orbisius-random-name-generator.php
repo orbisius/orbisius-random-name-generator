@@ -92,14 +92,14 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 
 		$instance_id = intval($instance_id);
 		?>
-		<div id="orbisius_random_name_generator_container orbisius_random_name_generator_container<?php echo (int) $instance_id; ?>"
-		     class="orbisius_random_name_generator_container orbisius_random_name_generator_container<?php echo (int) $instance_id; ?>">
+		<div id="orbisius_random_name_generator_container orbisius_random_name_generator_container<?php echo $instance_id; ?>"
+		     class="orbisius_random_name_generator_container orbisius_random_name_generator_container<?php echo $instance_id; ?>">
 			<div class="row">
 				<!-- Contact Form -->
 				<div id="orbisius_random_name_generator_form_wrapper" class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-					<form id='orbisius_random_name_generator_form<?php echo (int) $instance_id; ?>'
-					      class="orbisius_random_name_generator_form orbisius_random_name_generator_form<?php echo (int) $instance_id; ?> form-horizontal" method="POST">
-                        <input type="hidden" name="instance_id" value="<?php echo (int) $instance_id; ?>">
+					<form id='orbisius_random_name_generator_form<?php echo $instance_id; ?>'
+					      class="orbisius_random_name_generator_form orbisius_random_name_generator_form<?php echo $instance_id; ?> form-horizontal" method="POST">
+                        <input type="hidden" name="instance_id" value="<?php echo $instance_id; ?>">
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<?php echo esc_html($msg); ?>
@@ -113,7 +113,7 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 							</div>
 						</div>
 
-						<div class="result orbisius_random_name_generator_result orbisius_random_name_generator_result<?php echo (int) $instance_id; ?>"><?php echo esc_html($result); ?></div>
+						<div class="result orbisius_random_name_generator_result orbisius_random_name_generator_result<?php echo $instance_id; ?>"><?php echo esc_html($result); ?></div>
 					</form>
 				</div> <!-- /orbisius_random_name_generator_form_wrapper -->
 			</div> <!-- /row -->
