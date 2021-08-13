@@ -103,7 +103,7 @@ It wasn't tested but should work
 
 = 1.0.1 =
 * Added a demo and video links.
-* Fixed the example keyword definition.
+* Fixed the example keyword definition in the plugin's readme file.
 
 = 1.0.0 =
 * Initial release
