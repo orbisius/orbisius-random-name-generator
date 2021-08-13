@@ -12,7 +12,7 @@ Generates a random name based on a keyword list that you define.
 
 == Description ==
 
-Orbisius Random Name Generator is a simple plugin that randomly picks a name from a list.
+Orbisius Random Name Generator is a minimalistic WordPress plugin that randomly picks a name from a list.
 The shortcode can be used multiple times with different keywords on the same page.
 It will pick a random name from the appropriate list.
 The duplicates will be removed automatically (if any).
@@ -22,16 +22,15 @@ This plugin is for people who want to have a
 * Random Pet Name Generator
 * Random Baby Name Generator
 * Random Domain Name Generator
-* Random random stuff :)
+* Whatever random stuff you can think of :)
 
 Supported keyword separators: ,;| tab and new line
 
 = How it works =
 
-Create a page and insert the shortcode and define the keywords.
+Create a page, insert the shortcode and define the keywords.
 
-If you want a customization (paid). Do contact us
-
+If you want a customization (paid service)
 <a href="https://orbisius.com/products/wordpress-plugins/orbisius-random-name-generator/?utm_source=orbisius-random-name-generator&utm_medium=readme" title="" target="_blank">contact us</a>
 
 *You can pass words as a parameter*
@@ -51,8 +50,9 @@ word1, word2, word3
 
 == Demo ==
 
-Test drive
-TODO
+Test drive / Live demo
+
+<a href="https://wpdemo.net/demos/plugins/orbisius-random-name-generator/?utm_source=orbisius-random-name-generator&utm_medium=readme" title="" target="_blank">Orbisius Random Name Generator Free Live Demo</a>
 
 Video demo
 TODO

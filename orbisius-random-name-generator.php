@@ -3,7 +3,7 @@
 Plugin Name: Orbisius Random Name Generator
 Plugin URI: https://orbisius.com/products/wordpress-plugins/orbisius-random-name-generator
 Description: Displays a random name out of words that you have specified between the shortcode [orbisius_random_name_generator]....[/orbisius_random_name_generator]
-Version: 1.0.0
+Version: 1.0.1
 Author: Svetoslav Marinov (Slavi)
 Author URI: https://orbisius.com
 Text Domain: orbisius-tutorial-random-name-generator
