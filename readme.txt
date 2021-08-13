@@ -54,8 +54,7 @@ Test drive / Live demo
 <a href="https://wpdemo.net/demos/plugins/orbisius-random-name-generator/?utm_source=orbisius-random-name-generator&utm_medium=readme" title="" target="_blank">Orbisius Random Name Generator Free Live Demo</a>
 
 Video demo
-https://youtu.be/j-QPcQ-wUOc
-
+https://www.youtube.com/watch?v=j-QPcQ-wUOc&ab_channel=orbisius
 
 == Support ==
 
