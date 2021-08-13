@@ -6,7 +6,7 @@ Description: Displays a random name out of words that you have specified between
 Version: 1.0.1
 Author: Svetoslav Marinov (Slavi)
 Author URI: https://orbisius.com
-Text Domain: orbisius-tutorial-random-name-generator
+Text Domain: orbisius-random-name-generator
 Domain Path: /lang
 */
 
@@ -109,7 +109,7 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<button id="submit" class="btn btn-color">
-									<?php _e($btn_label, 'orbisius-tutorial-random-name-generator');?></button>
+									<?php _e($btn_label, 'orbisius-random-name-generator');?></button>
 							</div>
 						</div>
 

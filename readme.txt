@@ -34,19 +34,19 @@ If you want a customization (paid service)
 <a href="https://orbisius.com/products/wordpress-plugins/orbisius-random-name-generator/?utm_source=orbisius-random-name-generator&utm_medium=readme" title="" target="_blank">contact us</a>
 
 *You can pass words as a parameter*
-[orbisius_tutorial_random_name_generator words="word1, word2, word3"]
+[orbisius_random_name_generator words="word1, word2, word3"]
 
 You can pass words between the opening and closing tags.
-[orbisius_tutorial_random_name_generator]
+[orbisius_random_name_generator]
 word1
 word2
 word3
-[/orbisius_tutorial_random_name_generator]
+[/orbisius_random_name_generator]
 
 * You can pass words between the opening and closing tags and separate them by comma *
-[orbisius_tutorial_random_name_generator]
+[orbisius_random_name_generator]
 word1, word2, word3
-[/orbisius_tutorial_random_name_generator]
+[/orbisius_random_name_generator]
 
 == Demo ==
 
@@ -101,6 +101,10 @@ People who want to have a:
 It wasn't tested but should work
 
 == Changelog ==
+
+= 1.0.1 =
+* Added a demo and video links.
+* Fixed the example keyword definition.
 
 = 1.0.0 =
 * Initial release
