@@ -72,7 +72,7 @@ class Orbisius_Random_Name_Generator_Shortcodes {
 		$result = '';
 		ob_start();
 
-		$btn_label = empty($attribs['btn_label']) ? 'Generate' : $attribs['btn'];
+		$btn_label = empty($attribs['btn_label']) ? 'Generate' : $attribs['btn_label'];
 		$instance_id++;
 
 		// Let's get a random word only on post
