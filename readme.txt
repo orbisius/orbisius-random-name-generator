@@ -3,9 +3,9 @@ Contributors: lordspace,orbisius
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7APYDVPBCSY9A
 Tags: random name generator,random
 Requires at least: 4.0
-Tested up to: 5.8
+Tested up to: 5.9
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 
 Generates a random name based on a keyword list that you define.
@@ -99,6 +99,9 @@ People who want to have a:
 It wasn't tested but should work
 
 == Changelog ==
+
+= 1.0.2 =
+* Tested with WP 5.9 & fixes
 
 = 1.0.1 =
 * Added a demo and video links.
